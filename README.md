@@ -6,7 +6,7 @@ This project implements the data layer for a simplified Spotify clone using Reac
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/spotify-clone-data-layer.git
+   git clone https://github.com/kevinmwangi/Spotify-Clone.git
    ```
 
 2. **Navigate to the project directory:**
