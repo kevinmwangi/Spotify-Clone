@@ -84,7 +84,7 @@ function Footer(){
 				console.error( 'Error changing to next track:', error );
 			},
 		} );
-	}, [ spotifyService, volume, isPlaying ] );
+	}, [ spotifyService, isPlaying ] );
 
 	const handlePreviousTrack = useCallback( () => {
 		if ( audioServiceRef.current ) {
@@ -114,7 +114,7 @@ function Footer(){
 				console.error( 'Error changing to previous track:', error );
 			},
 		} );
-	}, [ spotifyService, volume, isPlaying ] );
+	}, [ spotifyService, isPlaying ] );
 
 	useEffect( () => {
 		if ( !audioServiceRef.current ) {
@@ -159,7 +159,7 @@ function Footer(){
 			console.warn(`No preview URL available for track: ${currentTrack.name}`);
 			handleNextTrack();
 		}
-	}, [currentTrack, volume, isPlaying, handleNextTrack]);
+	}, [currentTrack, isPlaying, handleNextTrack]);
 
 	useEffect( () => {
 		if ( audioServiceRef.current ) {
